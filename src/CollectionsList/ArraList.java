@@ -2,6 +2,7 @@ package CollectionsList;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 
 public class ArraList {
@@ -35,5 +36,19 @@ public class ArraList {
         planets.forEach(System.out::println);
 
 
+        String zx = "Танцюем ламбаду!";        //  Срвнивает длину строк
+        String zx2 = "Ламбада!";
+        int x = zx.compareTo(zx2);
+        System.out.println(x);
+
+        // mutable & immutable collections
+        List<String> list = new ArrayList<>();
+        list.add("one");
+        list.add("two");
+        list = Collections.unmodifiableList(list);
+        list.add("three");
     }
 }
+
+
+//    public interface C
